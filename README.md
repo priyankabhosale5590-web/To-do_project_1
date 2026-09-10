@@ -101,10 +101,6 @@ This project can be extended by adding features such as:
 
 The training material also introduces the idea of moving data from temporary memory to permanent storage such as files or databases.
 
-👩‍💻 Author
-
-Priyanka Bhosale
-
 Python Programming – Project 1
 DecodeLabs Industrial Training – 2026
 
