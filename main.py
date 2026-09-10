@@ -1,0 +1,50 @@
+tasks = []
+
+def add_task():
+    task = input("Enter your task: ").strip()
+
+    if task:
+        tasks.append(task)
+        print("Task added successfully!")
+    else:
+        print("Task cannot be empty.")
+
+
+def view_tasks():
+    if not tasks:
+        print("No tasks found.")
+        return
+
+    print("\n----- YOUR TO-DO LIST -----")
+
+    for number, task in enumerate(tasks, start=1):
+        print(f"{number}. {task}")
+
+    print("---------------------------")
+
+
+def main():
+    while True:
+        print("\n===== TO-DO LIST =====")
+        print("1. Add Task")
+        print("2. View Tasks")
+        print("3. Exit")
+
+        choice = input("Enter your choice (1-3): ")
+
+        if choice == "1":
+            add_task()
+
+        elif choice == "2":
+            view_tasks()
+
+        elif choice == "3":
+            print("Thank you for using the To-Do List!")
+            break
+
+        else:
+            print("Invalid choice. Please try again.")
+
+
+if __name__ == "__main__":
+    main()
